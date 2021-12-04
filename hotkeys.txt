@@ -1,0 +1,41 @@
+------------------------------------------------------
+- TELESCOPE
+-----------------------------------------------------
+<C-p> <cmd>Telescope find_files
+<C-f> <cmd>Telescope live_grep
+<C-e> <cmd>Telescope buffers
+<C-g> :lua require('telescope.builtin').git_files()
+
+-----------------------------------------------------
+- PYTHON AUTOFORMATER
+-----------------------------------------------------
+<C-a> :!/usr/bin/python -m black % <CR>
+<C-a> :!/usr/bin/python -m black % <CR>
+<C-a> :!/usr/bin/python -m black % <CR>
+ 
+-----------------------------------------------------
+- STAFF
+-----------------------------------------------------
+<BS> :NvimTreeToggle<CR>
+
+<C-_>   <Plug>NERDCommenterToggle
+<C-_>   <Plug>NERDCommenterToggle<CR>gv
+ 
+-----------------------------------------------------
+- Surround
+-----------------------------------------------------
+cs'<q> 'Hello world!' -> <q>Hello world!</q>
+cst" -> "Hello world!"
+ds" -> Hello world! 
+ysiw] -> [ Hello ] world! 
+cs]{ -> { Hello } world!
+yss). -> ({ Hello } world!) 
+ds{ds) -> Hello world! 
+ysiw<em> -> <em>Hello</em> world!
+
+<p class="important">
+  <em>Hello</em> world!
+</p>
+-----------------------------------------------------
+-
+-----------------------------------------------------
